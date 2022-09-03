@@ -1,14 +1,13 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react'
+import ReactDOM from 'react-dom'
 
-import "./index.scss";
+import Button from './Button'
+
+import './index.scss'
 
 const App = () => (
   <div className="mt-10 text-3xl mx-auto max-w-6xl">
-    <div>Name: app2</div>
-    <div>Framework: react</div>
-    <div>Language: TypeScript</div>
-    <div>CSS: Tailwind</div>
+    <Button onClick={() => console.log('click from dev shell')} />
   </div>
-);
-ReactDOM.render(<App />, document.getElementById("app"));
+)
+ReactDOM.render(<App />, document.getElementById('app'))
